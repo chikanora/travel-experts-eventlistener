@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Expert Agency - Registration</title>
+    <link rel="stylesheet" href="./css/registration.css">
+</head>
+<body>
+    <h1>
+        <img src="./image/logo.png" alt="logo" height="100px">Welcome to Travel Experts
+    </h1>
+    
+    <!-- Creating a navigation bar for users to navigate throughout the website -->
+    <div class="horizontal-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a class="active" href="registration.html">Register</a></li>
+        </ul>
+    </div>
+
+    <!-- Registration form -->
+    <!-- name, address, city, province, postal code, anything else a registration page would have -->
+    <form action="./registrationsubmit.html" onsubmit="return validateForm()">
+        <div class="registration">
+            <h1>Registration Page</h1>
+            <p>Please fill in the fields in order to create your account.</p>
+            <hr>
+            <!-- Full name field -->
+            <label for="fullname"><b>Full Name</b></label>
+            <input type="text" name="fullname" class="inputfields" id="fullname">
+            <p class="desc" style="display: none;">e.g. John Doe</p>
+
+            <!-- Username field -->
+            <label for="username"><b>Username</b></label>
+            <input type="text" name="username" class="inputfields" id="username">
+            <p class="desc" style="display: none;">e.g. johndoe123</p>
+
+            <!-- Password field -->
+            <label for="password"><b>Password</b></label>
+            <input type="password" name="password" class="inputfields" id="password">
+            <p class="desc" style="display: none;">Minimum of 8 Characters</p>
+
+            <!-- Email field -->
+            <label for="email"><b>Email</b></label>
+            <input type="email" name="email" class="inputfields" id="email">
+            <p class="desc" style="display: none;">e.g. johndoe123@travelexperts.ca</p>
+
+            <!-- Phone number field -->
+            <label for="phone"><b>Phone Number</b></label>
+            <input type="tel" name="phone" class="inputfields" id="phonenumber">
+            <p class="desc" style="display: none;">e.g. 403-123-1234</p>
+
+            <!-- Address field (including city, province, postal code, etc) -->
+            <label for="address"><b>Address</b></label>
+            <input type="text" name="address" class="inputfields" id="address">
+            <p class="desc" style="display: none;">e.g. 123 Main Street</p>
+
+            <label for="city"><b>City</b></label>
+            <input type="text" name="city" class="inputfields" id="city">
+            <p class="desc" style="display: none;">e.g. Calgary</p>
+
+            <label for="province"><b>Province</b></label>
+            <input type="text" name="province" class="inputfields" id="province">
+            <p class="desc" style="display: none;">e.g. Alberta</p>
+
+            <label for="postalcode"><b>Postal Code</b></label>
+            <input type="text" name="postalcode" class="inputfields" id="postalcode">
+            <p class="desc" style="display: none;">e.g. T1A 2B3</p>
+
+            <!-- Submit button -->
+            <button type="submit" class="registerbtn" onclick="return confirm_submit()">Submit</button>
+            <button type="reset" class="resetbtn" onclick="return confirm_reset()">Reset</button>
+        </div>    
+    </form> 
+    <script src="./script/registration.js"></script>
+</body>
+</html>

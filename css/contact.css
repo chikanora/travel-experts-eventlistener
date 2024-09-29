@@ -1,0 +1,100 @@
+body
+{
+    margin: 0; /* Only there just to make sure the navigation bar is stretched out properly with no spaces */
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+h1
+{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+/* Creating the navigation bar by making the black bar being fixed to the hyperlink tags */
+ul
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+    top: 150px;
+    width: 100%;
+}
+
+/* Spacing it out */
+li
+{
+    float: left;
+    width: 420px;
+}
+
+/* Editing out the hyperlinks to blend in within the navigation bar */
+li a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* If the mouse hovers over, make it so the color/shade appears within the navigation bar */
+li a:hover:not(.active)
+{
+    background-color: #111;
+}
+
+/* Active only on the page the user is currently on */
+.active
+{
+    background: green;
+}
+
+/* Form container */
+.container
+{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Input fields */
+input[type=text], select, textarea
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Submit button */
+input[type=submit]
+{
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Submit button hover feature */
+input[type=submit]:hover
+{
+    background-color: #45A049;
+}

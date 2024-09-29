@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Expert Agency - Contact Us</title>
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+    <h1>
+        <img src="./image/logo.png" alt="logo" height="100px">Welcome to Travel Experts
+    </h1>
+    
+    <!-- Creating a navigation bar for users to navigate throughout the website -->
+    <div class="horizontal-nav">
+        <ul>
+            <li><a  href="index.html">Home</a></li>
+            <li><a class="active" href="contact.html">Contact Us</a></li>
+            <li><a href="registration.html">Register</a></li>
+        </ul>
+    </div>
+
+    <h3>Have any questions or concerns? Feel free to contact us below!</h3>
+    <!-- Contact us form -->
+    <div class="container">
+        <form action="/contactsubmit.html">
+            <!-- First name -->
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname">
+
+            <!-- Last name -->
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname">
+
+            <!-- Country -->
+            <label for="country">Country</label>
+            <select id="country">Country
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="us">United States</option>
+            </select>
+
+            <!-- Subject -->
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" style="height: 200px"></textarea>
+
+            <!-- Submit button -->
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src=""></script>
+</body>
+</html>
